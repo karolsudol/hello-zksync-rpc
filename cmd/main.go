@@ -55,6 +55,12 @@ func main() {
 	}
 	fmt.Println("Tx hash", hash)
 
+	bal, err := w.GetBalance()
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println("Balance", bal)
+
 	// var object Greeter
 
 }
